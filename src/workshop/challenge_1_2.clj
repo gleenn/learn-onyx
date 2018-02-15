@@ -5,7 +5,30 @@
 
 ;;; <<< BEGIN FILL ME IN >>>
 
-(def workflow)
+;;    read-segments
+;;         |
+;;         v
+;;       cube-n
+;;      /      \
+;;     |       |
+;;     v       v
+;; add-ten   add-forty
+;;     |       |
+;;      \     /
+;;         v
+;;    multiply-by-5
+;;         |
+;;         v
+;;    write-segments
+
+
+(def workflow
+  [[:read-segments :cube-n]
+   [:cube-n :add-ten]
+   [:cube-n :add-forty]
+   [:add-ten :multiply-by-5]
+   [:add-forty :multiply-by-5]
+   [:multiply-by-5 :write-segments]])
 
 ;;; <<< END FILL ME IN >>>
 
