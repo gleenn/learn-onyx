@@ -5,7 +5,29 @@
 
 ;;; <<< BEGIN FILL ME IN >>>
 
-(def workflow)
+;; A    B       C
+;;  \  /        |
+;;   D- >       E
+;;   |  \     / | \
+;;   F   \-> G  H  I
+;;  / \       \ | /
+;; J   K        L
+
+(def workflow
+  [[:A :D]
+   [:B :D]
+   [:D :F]
+   [:D :G]
+   [:F :J]
+   [:F :K]
+   [:C :E]
+   [:E :G]
+   [:E :H]
+   [:E :I]
+   [:G :L]
+   [:H :L]
+   [:I :L]
+   ])
 
 ;;; <<< END FILL ME IN >>>
 
